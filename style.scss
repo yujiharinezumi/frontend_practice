@@ -17,10 +17,19 @@ $cBlack: black;
   /* -webkit-transition: all 0.3s; */
   transition: all 0.3s;
 
-  &:hover {
-    background-color: $cBlack;
-    color: $cWhite;
+  &.float{
+    &:hover{
+      box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    }
   }
+
+
+  // &は省略できないよ！
+  // 半角スペース開ける場合は省略可
+  // &:hover {
+  //   background-color: $cBlack;
+  //   color: $cWhite;
+  // }
 }
 
 // .btn:hover {
