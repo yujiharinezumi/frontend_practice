@@ -1,0 +1,15 @@
+.rect {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: orangered;
+    // transform: translate(100%,100%);
+    // deg = degree 傾きをかえることができる
+    // transform: rotate(-30deg);
+    // 斜めの線を作る skew
+    // transform: skew(-30deg);
+    transform: translateX(50px) scaleY(2);
+    // top:left;
+    // 任意の場所に支点を決めることができる
+    transform-origin: center center;
+}
