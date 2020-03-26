@@ -54,3 +54,16 @@ $cBlack: black;
     }
   }
 }
+
+
+// spanタグをposition:absoluteにしている理由
+// →Now, HovertingとButtonの二つを重ねるため
+// spanはインライン要素のため,width heightが設定できないが、
+// position:absoluteにすることによって設定可能になる
+// display:blockにする必要はないのか？
+// 実はdisplay: blockを宣言しなくても
+// position: absoluteやfixedを選択した際にはインライン要素は
+// ブロック要素のように振る舞うため、width, heightを設定することができます。
+
+// 絶対位置指定要素と呼ばれる、
+// position: absoluteまたはfixedを適用された要素の特殊な振る舞いです。
