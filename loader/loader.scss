@@ -2,6 +2,7 @@ $cBlack: black;
 
 .three-dot-spinner {
     text-align: center;
+
     & div {
         display: inline-block;
         width: 18px;
@@ -11,6 +12,25 @@ $cBlack: black;
         animation: sk-bouncedelay 1.4s infinite;
     }
 
+}
+
+@keyframes sk-bouncedelay {
+    0% {
+        transform:scale(0);
+
+    }
+
+    40% {
+        transform:scale(1);
+    }
+
+    80% {
+        transform:scale(0);
+    }
+
+    100% {
+        transform:scale(0);
+    }
 }
 
 
