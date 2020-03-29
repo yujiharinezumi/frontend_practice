@@ -12,12 +12,18 @@ $cBlack: black;
         animation: sk-bouncedelay 1.4s infinite;
     }
 
+    & .bounce1 {
+        animation-delay: -0.32s;
+    }
+
+    & .bounce2 {
+        animation-delay: -0.16s;
+    }
 }
 
 @keyframes sk-bouncedelay {
     0% {
         transform:scale(0);
-
     }
 
     40% {
@@ -32,6 +38,4 @@ $cBlack: black;
         transform:scale(0);
     }
 }
-
-
 
