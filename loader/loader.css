@@ -1,0 +1,14 @@
+.three-dot-spinner {
+  text-align: center;
+}
+
+.three-dot-spinner div {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: black;
+  border-radius: 50%;
+  -webkit-animation: sk-bouncedelay 1.4s infinite;
+          animation: sk-bouncedelay 1.4s infinite;
+}
+/*# sourceMappingURL=loader.css.map */
