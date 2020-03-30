@@ -26,8 +26,8 @@
 
 @-webkit-keyframes sk-rotateplane2 {
   0% {
-    -webkit-transform: rotateX(0);
-            transform: rotateX(0);
+    -webkit-transform: perspective(120px) rotateX(0) rotateY(0);
+            transform: perspective(120px) rotateX(0) rotateY(0);
   }
   50% {
     -webkit-transform: rotateX(-180deg) rotateY(0);
@@ -41,8 +41,8 @@
 
 @keyframes sk-rotateplane2 {
   0% {
-    -webkit-transform: rotateX(0);
-            transform: rotateX(0);
+    -webkit-transform: perspective(120px) rotateX(0) rotateY(0);
+            transform: perspective(120px) rotateX(0) rotateY(0);
   }
   50% {
     -webkit-transform: rotateX(-180deg) rotateY(0);

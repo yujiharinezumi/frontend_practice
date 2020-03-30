@@ -1,6 +1,8 @@
 @import "mixin";
 
 .try {
+    // perspective: 120px;
+    // perspective-origin: center center ;
   /** ここに記述しよう */
   .spinner {
     width: 40px;
@@ -19,13 +21,13 @@
 
   @keyframes sk-rotateplane2 { 
        0% {
-        transform: rotateX(0);
+        transform: perspective(120px) rotateX(0) rotateY(0);
        }
        50%{
         transform: rotateX(-180deg) rotateY(0);
        }
        100%{
-        transform: rotateX(-180deg) rotateY(-180deg);
+        transform: rotateX(-180deg) rotateY(-180deg);   
        }
   }
   
