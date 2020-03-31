@@ -65,25 +65,7 @@
     50%{
         transform: scale(1);
     }
-  }
-
-  .rect-spinner {
-    margin: 100px auto;
-    width: 50px;
-    height: 40px;
-    text-align: center;
-
-    & > div {
-        background-color: #333;
-        height: 100%;
-        width: 6px;
-        display: inline-block;
-    }
-
-}
-  
-
-   
+  }   
 }
 
   
