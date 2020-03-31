@@ -85,6 +85,12 @@
           $iteration-count: infinite,
           $timing-function: ease-in-out,
       );
+      @for $i from 1 through 5 {
+          &:nth-child(#{$i}) {
+              animation-delay: -1.3s + $i * 0.1s;
+
+          }
+      }
     }
   }
   @keyframes sk-stretchdelay2 {
