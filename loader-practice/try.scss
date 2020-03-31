@@ -79,6 +79,21 @@
       height: 100%;
       width: 6px;
       display: inline-block;
+      @include animation(
+          $name: sk-stretchdelay2,
+          $duration: 1.2s,
+          $iteration-count: infinite,
+          $timing-function: ease-in-out,
+      );
+    }
+  }
+  @keyframes sk-stretchdelay2 {
+    0%, 40%, 100% {
+        transform: scaleY(0.4);
+    }
+
+    20% {
+        transform: scaleY(1);
     }
 
   }
