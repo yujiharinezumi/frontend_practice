@@ -4,7 +4,6 @@ html {
     font-family: 'Teko', sans-serif;
 }
 
-
 body {
   margin: 0;
 }
@@ -25,23 +24,23 @@ body {
   font-size:  2em;
 
   &.inview {
-      opacity: 1;
+    opacity: 1;
       & .char {
         display: inline-block;
+
         @include animation(
-            $name: kf-animate-chars,
-            $duration: 0.5s,
-            $timing-function: cubic-bezier(0.39, 1.57, 0.58, 1),
-            $fill-mode: both,
+          $name: kf-animate-chars,
+          $duration: 0.5s,
+          $timing-function: cubic-bezier(0.39, 1.57, 0.58, 1),
+          $fill-mode: both,
         );
 
         @for $i from 1 through 9 {
-            &:nth-last-child(#{$i}){
-                animation-delay: $i * 0.04s;
-            }
+          &:nth-child(#{$i}){
+            animation-delay: $i * 0.05s;
+          }
         }
       }
-
   }
 
 }
